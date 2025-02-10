@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Lato&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:"Roboto",serif;
+    background-color:#121212;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.content{
+    background-color:#1F1B24;
+    color:#E0E0E0;
+    width:400px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+.content h1{
+    text-align:center;
+    margin-bottom:15px;
+    font-weight:bold;
+    font-size:35px;
+    color:#FF0266;
+}
+input{
+    display:block;
+    width:90%;
+    margin:35px 15px;
+    padding:10px;
+    border-radius:5px;
+    outline:none;
+    border:2px solid #ddd;
+}
+input:focus{
+    border:2px solid #FF0266;
+}
+a{
+    margin:0 18px;
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+}
+a+a{
+    margin-left:130px;
+}
+.btn{
+    width:90%;
+    margin:25px 15px;
+    padding:10px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    background-color:#6200EA;
+    font-size:18px;
+    transition:0.3s ease-in-out;
+}
+.btn:hover{
+    background-color:#BB86FC;
+    color:white;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+}

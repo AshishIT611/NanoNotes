@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Hello</h2>
+        <i class="fa-solid fa-magnifying-glass"></i><h2 class="title">Search</h2>
+        <i class="fa-solid fa-gear" id="settings-icon"></i><h2 class="title">Setting</h2>
+        <div id="settings-options" class="settings-options">
+            <div onclick="toggleDarkMode()">Toggle Dark/Light Mode</div>
+        </div>
+        <i class="fa-solid fa-circle-plus"></i><h2 class="title">New page</h2>
+        <div id="pages-container"></div>
+        <i class="fa-solid fa-plus"></i><h2 class="title">Add a page</h2>
+        <i class="fa-solid fa-trash"></i><h2 class="title">Trash</h2>
+        <i class="fa-solid fa-rotate-right"></i><h2 class="title">Recent Notes</h2>
+        <div id="recent-notes-container"></div>
+    </aside> 
+    <div class="right">
+        <div id="content" class="content">
+            <img class="image" src="images/pngtree-empty-box-icon-for-your-project-png-image_1520407.jpg" alt="Box">
+            <h3 class="name">Welcome</h3>
+            <button type="submit" class="btn" id="btn">Create A Note</button>
+        </div>
+        <div id="notes-container"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/e94ab9983e.js" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+</html>

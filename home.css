@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar i {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar .title {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+#pages-container {
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+#pages-container .page-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pages-container .page-option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.search-input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+.right {
+    margin-left: 300px;
+    padding: 20px;
+    width: calc(100% - 300px);
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.name {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(30, 17, 17);
+    transition: 0.3s ease-in-out;
+}
+
+#notes-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+textarea{
+    resize:none;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.note-content {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.save-button,
+.delete-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.save-button:hover,
+.delete-button:hover {
+    background-color: rgb(45, 43, 43);
+}
+
+.sidebar .fa-trash {
+    color: red;
+}
+
+.settings-options {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.settings-options div {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.settings-options div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.sidebar.dark-mode {
+    background-color: #333333;
+}
+
+.sidebar .title.dark-mode {
+    color: #ffffff;
+}
+
+.sidebar i.dark-mode {
+    color: #ffffff;
+}
+
+.right.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+#pages-container .page-option .dark-mode{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.note.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.note h3.dark-mode {
+    color: #ffffff;
+}
+
+.note-content.dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.save-button.dark-mode,
+.delete-button.dark-mode {
+    background-color: #444444;
+}
+
+.save-button.dark-mode:hover,
+.delete-button.dark-mode:hover {
+    background-color: #666666;
+}
+
+.word-counter {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
